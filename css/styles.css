@@ -1,0 +1,48 @@
+.promo-item:first-child {
+    background-color: #FF7799;
+    background-image: url("../img/promo-raspberry.jpg");
+    width: 570px;
+    height: 268px;
+} 
+
+.promo-item:last-child {
+    background-color: #FF7799;
+    background-image: url("../img/promo-marshmallow.jpg");
+    width: 570px;
+    height: 268px;
+} 
+
+.about-shop {
+    background-color: #FCFCFC;
+    background-image: url("../img/about-shop-background.jpg");
+    width: 1170px;
+    height: 480px;
+}
+
+.blog {
+    background-color: #FCFCFC;
+    background-image: url("../img/blog-background.jpg");
+    width: 570px;
+    height: 216px;
+}
+
+.subscribe {
+    background-color: #FCFCFC;
+    background-image: url("../img/subscribe-background.png");
+    width: 570px;
+    height: 220px;
+}
+
+.delivery {
+    background-color: #FCFCFC;
+    background-image: url("../img/delivery-background.jpg");
+    width: 1170px;
+    height: 534px;
+}
+
+.contacts {
+    background-color: #FCFCFC;
+    background-image: url("../img/contacts-background.jpg");
+    width: 1170px;
+    height: 492px;
+}
