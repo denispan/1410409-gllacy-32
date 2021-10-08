@@ -1,11 +1,171 @@
-.promo-item:first-child {
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/inter-400.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/inter-700.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/inter-900.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    background-color: #FEAFC3;
+    color: #2D3440;
+}
+
+.link {
+    line-height: 20px;
+    color: #2D3440;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.header-phone {
+    font-weight: 700;
+}
+
+.login-link, .cart-link {
+    font-size: 14px;
+}
+
+.main-goods-title {
+    font-size: 36px;
+    line-height: 46px;
+    font-weight: 900;
+}
+
+.main-goods-description {
+    font-size: 18px;
+    line-height: 24px 
+}
+
+a.button {
+    line-height: 20px;
+    font-weight: 700;
+    color: #2D3440;
+    text-align: center;
+    text-decoration: none;
+}
+
+.text {
+    font-size: 32px;
+    line-height: 46px;
+    font-weight: 900; 
+    text-align: center;   
+}
+
+.promo-item-title, .blog-title {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700; 
+}
+
+.popular-item-title {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    text-align: center; 
+}
+
+.description {
+    color: #565C66;
+}
+
+.popular-item-description {
+    text-align: center;
+}
+
+.popular-item-price {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700; 
+}
+
+.blog-category {
+    line-height: 20px;
+    color: #565C66;
+}
+
+.delivery-title {
+    text-align: left;
+}
+
+.label-delivery {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;     
+}
+
+input::placeholder {
+    font-size: 16px;
+    line-height: 20px;
+    color: #B9B9B9;
+}
+
+.button-red {
+    background-color: #FF2F64;
+    color: #FCFCFC;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.contacts-note {
+    font-size: 14px;
+    line-height: 20px;
+    color: #565C66;   
+}
+
+.contacts-item {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #2D3440;
+}
+
+.navigation-link-footer {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.maker-link, .maker-text {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.maker-link {
+    text-decoration: underline;
+}
+
+
+.promo-item-raspberry {
     background-color: #FF7799;
     background-image: url("../img/promo-raspberry.jpg");
     width: 570px;
     height: 268px;
 } 
 
-.promo-item:last-child {
+.promo-item-marshmallow {
     background-color: #FF7799;
     background-image: url("../img/promo-marshmallow.jpg");
     width: 570px;
@@ -45,4 +205,88 @@
     background-image: url("../img/contacts-background.jpg");
     width: 1170px;
     height: 492px;
+}
+
+/* catalog.html */
+
+.navigation-link-current {
+    background-color: #FF4A78;
+    color: #FCFCFC;
+}
+
+.breadcrumbs-link {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #2D3440;
+}
+
+.page-inner-title {
+    font-size: 32px;
+    line-height: 46px;
+    font-weight: 900; 
+}
+
+.filter-form {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.filter-fieldset-wrapper {
+    background-color: rgba(252, 252, 252, 0.3);
+}
+
+.button-form-apply {
+    font-weight: 700;  
+    background-color: rgba(252, 252, 252, 0.3);
+    border: 2px solid #FCFCFC;
+    text-align: center;  
+}
+
+.product-card {
+    background-color: #FCFCFC;
+}
+
+.product-card-link {
+    color: #2D3440;
+    text-decoration: none;
+}
+
+.product-card-title, .product-card-price {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #2D3440;
+    text-align: center;
+}
+
+.product-card-price {
+    text-align: left;
+}
+
+
+.product-card-text {
+    color: #565C66;
+    text-align: center;
+}
+
+.pagination-show-more {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    text-align: center;
+    background-color: #FCFCFC;
+    border: 4px solid rgba(45, 52, 64, 0.1); 
+}
+
+.pagination-link {
+    font-size: 16px;
+    line-height: 20px;   
+    text-align: center;  
+    text-decoration: none; 
+    color: #2D3440; 
+}
+
+.pagination-link-current {
+    background-color: #FCFCFC;
 }
