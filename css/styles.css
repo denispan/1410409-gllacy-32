@@ -38,9 +38,21 @@ body {
     color: #2D3440;
 }
 
+.visually-hidden {
+    display: none;
+}
+
+.header-container {
+    display: flex;
+    width: 1170px;
+    margin: 0 auto;
+}
+
+
 .container {
     display: flex;
     width: 1170px;
+    flex-direction: column;
     margin: 0 auto;
 }
 
@@ -59,7 +71,7 @@ body {
     max-width: 253px;
 }
 
-.main-container {
+.main-page {
     flex-grow: 1;
     flex-direction: column;
 }
@@ -69,7 +81,7 @@ body {
 }
 
 .main-goods-order {
-    width: 540px;
+    width: 540px; 
 }
 
 .main-goods-title {
@@ -85,10 +97,19 @@ body {
     line-height: 24px; 
 }
 
-.main-goods-title, .main-goods-description {
-    margin: 0;
+
+.main-goods-item {
+    display: none;
     margin-left: 70px;
     margin-right: 10px;
+}
+
+.main-goods-current {
+    display: block;
+}
+
+.button-order {
+    width: 75px;
 }
 
 .main-goods-gallery {
@@ -106,6 +127,7 @@ body {
     padding: 0;
     display: flex;
     list-style: none;
+    margin-left: 21px;
 }
 
 .gallery-item {
@@ -114,13 +136,11 @@ body {
 
 .gallery-item-current {
     width: 312px;
-    margin-left: 21px;
     margin-right: 56px;
 }
 
 .gallery-item:last-child {
     margin-left: 41px;
-    margin-right: 0;
 }
 
 .social {
@@ -143,10 +163,13 @@ body {
     text-align: center;   
 }
 
+
 .promo-text {
     width: 527px;
     margin: 0 auto;
 }
+
+
 
 .promo-list {
     margin: 0;
@@ -157,49 +180,41 @@ body {
 }
 
 .promo-item {
-    width: 570px;   
-}
-
-.promo-item-title {
-    margin: 40px 0 16px 40px;
-    padding: 0;
-    font-size: 24px;
-    line-height: 30px;
-    font-weight: 700; 
+    box-sizing: border-box;
+    width: 570px; 
+    padding: 40px 210px 40px 40px;
 }
 
 .promo-item-raspberry {
     background-color: #FF7799;
     background-image: url("../img/promo-raspberry.jpg");
-    width: 570px;
-    height: 268px;
-}
-
-.promo-item-raspberry .promo-item-text {
-    width: 321px;   
-    margin: 0;
-    padding: 0;
-    margin-left: 40px;
+    background-repeat: no-repeat;
 }
 
 .promo-item-marshmallow {
     background-color: #FF7799;
     background-image: url("../img/promo-marshmallow.jpg");
-    width: 570px;
-    height: 268px;
+    background-repeat: no-repeat;
+    padding-right: 230px;
 }
 
-.promo-item-marshmallow .promo-item-text {
-    width: 294px;   
-    margin: 0;
-    padding: 0;
-    margin-left: 40px;
+.promo-item-title {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700; 
+}
+
+.promo-item-text {
+    margin-top: 0;
+    margin-bottom: 32px;
 }
 
 .button-promo {
     width: 112px;
-    margin: 32px 0 40px 40px;
 }
+
 
 .popular-text {
     width: 527px;   
@@ -241,7 +256,7 @@ body {
 }
 
 .popular-item-price {
-    width: 150px;                 /* взял с запасом, чтобы уместилась более длинная цена, почти до корзины */
+    width: 150px;                
     padding: 0;
     margin: 0;                 
     font-size: 20px;
@@ -257,13 +272,13 @@ body {
 .about-shop {
     background-color: #FCFCFC;
     background-image: url("../img/about-shop-background.jpg");
-    width: 1170px;
-    height: 480px;
+    background-repeat: no-repeat;
+    padding: 80px 64px;
 }
 
 .about-shop-key-text {
     width: 995px;
-    margin: 0 auto;
+    margin: 0 auto 56px auto;
 }
 
 .about-shop-list {
@@ -281,7 +296,6 @@ body {
 }
 
 .about-shop-pic {
-    margin: 0;
     margin-right: 16px;
 }
 
@@ -291,29 +305,28 @@ body {
 
 .blog-subscribe-container {
     display: flex;
-    width: 1170px;
-    margin: 0 auto;
+    width: 100%;
     justify-content: space-between;
 }
 
 .blog {
     background-color: #FCFCFC;
     background-image: url("../img/blog-background.jpg");
+    background-repeat: no-repeat;
     width: 570px;
-    height: 216px;
+    padding: 32px 235px 62px 32px;
+    box-sizing: border-box;
 }
 
 .blog-category {
-    margin-left: 32px;
-    line-height: 20px;
+    margin-top: 0;
+    margin-bottom: 12px;
     color: #565C66;
 }
 
 .blog-title {
     margin: 0;
     padding: 0;
-    margin-left: 32px;
-    width: 303px;
     font-size: 24px;
     line-height: 30px;
     font-weight: 700; 
@@ -322,47 +335,55 @@ body {
 .subscribe {
     background-color: #FCFCFC;
     background-image: url("../img/subscribe-background.png");
+    background-repeat: no-repeat;
     width: 570px;
-    height: 220px;
+    padding: 32px;
+    box-sizing: border-box;
 }
 
 .subscribe-description {
-    width: 506px;
-    margin-left: 32px;
+    margin-top: 0;
+    margin-bottom: 42px;
 }
 
 .subscribe-form {
     display: flex;
-    width: 506px;
     justify-content: space-between;
-    margin: 0;
-    padding: 0;
-    margin-left: 32px;
 }
 
 .delivery {
     display: flex;
     background-color: #FCFCFC;
     background-image: url("../img/delivery-background.jpg");
-    width: 1170px;
-    height: 534px;
+    width: 100%;
+    padding: 104px 104px 106px 100px;
+    box-sizing: border-box;
+
 }
 
 .delivery-description {
     width: 371px;
-    margin-left: 100px;
-    margin-right: 135px;
+    margin-right: 175px;
+    margin-top: 63px;
 }
 
+.description-order {
+    width: 380px;
+}
+
+.delivery-title {
+    margin: 0;
+    padding: 0;
+}
+
+
 .delivery-order {
-    width: 500px;
-    padding-left: 40px;
+    width: 420px;  
 }
 
 
 .contacts-wrapper {
-    width: 1170px;
-    padding-left: 104px;
+    padding: 104px 816px 104px 104px;
 }
 
 
@@ -381,11 +402,6 @@ body {
     background-color: #FCFCFC;
     text-align: center;
     padding: 12px 32px;
-}
-
-.button-order {
-    width: 75px;
-    margin-left: 70px;
 }
 
 .button-link {
@@ -434,8 +450,7 @@ body {
 .contacts {
     background-color: #FCFCFC;
     background-image: url("../img/contacts-background.jpg");
-    width: 1170px;
-    height: 492px;
+    background-repeat: no-repeat;
 }
 
 .contacts-note {
@@ -451,6 +466,17 @@ body {
     color: #2D3440;
 }
 
+.footer-container {
+    display: flex;
+    width: 1170px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.social-footer {
+    margin-right: 300px;
+}
+
 .navigation-link-footer {
     font-size: 14px;
     line-height: 20px;
@@ -464,10 +490,6 @@ body {
 
 .maker-link {
     text-decoration: underline;
-}
-
-.footer-container {
-    justify-content: space-between;
 }
 
 .navigation-list-footer {
