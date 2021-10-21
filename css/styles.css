@@ -661,11 +661,6 @@ body {
     text-align: center;
 }
 
-.product-card-wrapper {
-    display: flex;
-    justify-content: space-between;
-}
-
 .product-card-button {
     padding: 0;
 }
