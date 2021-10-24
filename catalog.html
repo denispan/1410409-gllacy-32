@@ -338,35 +338,39 @@
         </ul>
 
         <div class="pagination-wrapper">
-          <button class="button pagination-show-more" type="button">Показать ещё</button>
-
-          <ul class="pagination pagination-catalog">
-            <li class="pagination-item">
-              <a class="pagination-link pagination-prev pagination-disabled">
-                <span class="visually-hidden">Предыдущая страница</span>
-              </a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link pagination-link-current">1</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">2</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">3</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">4</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">5</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link pagination-next" href="#">
-                <span class="visually-hidden">Следующая страница</span>
-              </a>
-            </li>
-          </ul>
+          <div class="pagination-show-more-wrapper">
+            <button class="button pagination-show-more" type="button">Показать ещё</button>
+          </div>
+        
+          <div class="pagination-catalog-wrapper">
+            <ul class="pagination pagination-catalog">
+              <li class="pagination-item">
+                <a class="pagination-link pagination-prev pagination-disabled">
+                  <span class="visually-hidden">Предыдущая страница</span>
+                </a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link pagination-link-current">1</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">2</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">3</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">4</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">5</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link pagination-next" href="#">
+                  <span class="visually-hidden">Следующая страница</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
 
       </section>
@@ -395,10 +399,10 @@
       </ul>
 
       <nav class="navigation-footer">
-        <img class="footer-img-heart" src="img/footer-heart.svg" width="14" height="12" alt="Поставщикам сюда">
+        
         <ul class="navigation-list-footer">
           <li class="navigation-item-footer">
-            <a class="link navigation-link-footer" href="#"><b>Для поставщиков</b></a>
+            <a class="link navigation-link-footer" href="#"><img class="footer-img-heart" src="img/footer-heart.svg" width="14" height="12" alt="Поставщикам сюда"><b>Для поставщиков</b></a>
           </li>
           <li  class="navigation-item-footer">
             <a class="link navigation-link-footer" href="#">О производстве</a>
