@@ -828,12 +828,21 @@ body {
 }
 
 
+
 .footer-container {
     display: flex;
     width: 1170px;
     margin: 0 auto;
     padding: 48px 14px 48px 4px;
     justify-content: space-between;
+}
+
+.footer-container-social {
+    width: 200px;
+}
+
+.footer-container-navigation {
+    margin: 0 auto;
 }
 
 .navigation-footer {
@@ -883,9 +892,17 @@ body {
     outline: none;
 }
 
-.navigation-link-footer:active  {
+.navigation-link-footer:active {
     background-color: rgba(252, 252, 252, 1);
     box-shadow: none;
+}
+.footer-container-maker {
+    width: 200px;
+    display: flex;
+}
+
+.maker {
+    margin-left: auto;
 }
 
 .maker-link, .maker-text {
