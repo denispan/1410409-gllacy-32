@@ -975,7 +975,7 @@ body {
     height: 6px;
     background-image: url("../img/breadcrumbs-union.svg");
     top: 9px;
-    left: 68px;
+    right: -18px;
 }
 
 .breadcrumbs-item:last-child::after {
@@ -1035,7 +1035,7 @@ body {
     background-color: rgba(252, 252, 252, 0.3);
 }
 
-.button-filter-fieldset-submit {   
+.button-form-submit {   
     font-family: "Inter", sans-serif;
     font-size: 14px;
     line-height: 20px;
@@ -1054,12 +1054,12 @@ body {
     align-self: center;
 }
 
-.button-filter-fieldset-submit:hover {
+.button-form-submit:hover {
     background-color: #FCFCFC;
     box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.3);
 }
 
-.button-filter-fieldset-submit:focus {
+.button-form-submit:focus {
     box-shadow: 0 0 0 2px #2D3440;
     outline: none;
 }
@@ -1147,11 +1147,11 @@ body {
     cursor: default;
 }
 
-.pagination-catalog-prev {
+.pagination-catalog-item-prev {
     margin-right: 12px;
 }
 
-.pagination-catalog-next {
+.pagination-catalog-item-next {
     margin-left: 12px;
 }
 
@@ -1159,14 +1159,14 @@ body {
     fill: #2D3440;
 }
 
-.icon-pagination-catalog-disabled {
-    opacity: 0.2;
-}
-
-.pagination-catalog-disabled {
+.pagination-catalog-link-disabled {
     pointer-events: none;
     cursor: default; 
     nav-index: -1;
+}
+
+.pagination-catalog-link-disabled .icon-pagination-catalog {
+    opacity: 0.2;
 }
 
 .pagination-catalog-link:hover {
