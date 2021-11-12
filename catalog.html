@@ -13,6 +13,18 @@
     </symbol>
   </svg>
 
+  <svg  class="visually-hidden" aria-hidden="true" focusable="false" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="check-off-sprite" viewBox="0 0 16 16">
+      <g clip-path="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.3 1.33a.96.96 0 0 0-.97.97v11.4a.96.96 0 0 0 .97.96h11.4a.96.96 0 0 0 .97-1V2.3a.91.91 0 0 0-.29-.68 1 1 0 0 0-.28-.23.97.97 0 0 0-.4-.06H2.3Zm13.54 13.21A2.3 2.3 0 0 1 13.7 16H2.3A2.3 2.3 0 0 1 0 13.7V2.3A2.3 2.3 0 0 1 1.46.16c.11-.1.27-.16.43-.16H13.7c.34 0 .65.04.94.17.28.12.5.31.69.5.48.48.67 1.06.67 1.63v11.8c0 .18-.06.33-.16.44Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h16v16H0z"/></clipPath></defs>
+    </symbol>
+  </svg>
+
+  <svg  class="visually-hidden" aria-hidden="true" focusable="false" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="check-on-sprite" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M1.615 1.615a.962.962 0 0 1 .68-.282h8.96a.667.667 0 1 0 0-1.333h-8.96A2.295 2.295 0 0 0 0 2.296v11.407A2.297 2.297 0 0 0 2.296 16h11.402a2.295 2.295 0 0 0 2.295-2.296V8a.667.667 0 1 0-1.333 0v5.703a.963.963 0 0 1-.962.963H2.296a.962.962 0 0 1-.963-.963V2.296c0-.255.102-.5.282-.68Zm14.202.325a.667.667 0 1 0-.968-.917L7.614 8.66 5.782 6.727a.667.667 0 0 0-.968.917l2.316 2.444a.667.667 0 0 0 .968 0l7.719-8.148Z"/>
+    </symbol>
+  </svg>
+
   <header class="page-header">
     <nav class="navigation">
       <a class="main-logo" href="index.html"><img src="img/main-logo.svg" width="137" height="56" alt="Логотип GllacyShop"></a>
@@ -33,8 +45,36 @@
           <a class="navigation-link navigation-link-search" href="#">
             <span class="visually-hidden">Поиск</span>
           </a>
+          <div class="popup popup-search visually-hidden">
+            <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
+              <label class="visually-hidden" for="search-input">Поиск по сайту</label>
+              <input class="input-field popup-search-input"  name="search" id="search-input" type="text" placeholder="Поиск по сайту" required>
+              <button class="button-clear-search">
+                <svg class="button-clear-search-icon" width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.803 1.138A.667.667 0 1 0 8.86.195L5 4.056 1.137.196a.667.667 0 1 0-.943.942L4.056 5 .196 8.86a.667.667 0 0 0 .942.943L5 5.942 8.86 9.803a.667.667 0 1 0 .943-.943L5.942 5l3.861-3.862Z"/>
+                </svg>
+              </button>
+              <button class="visually-hidden" type="submit">Отправить</button>
+            </form>
+          </div>
         </li>
         <li class="navigation-item">
+          <div class="popup popup-login visually-hidden">
+            <form class="login-form" action="https://echo.htmlacademy.ru/" method="get">
+              <h2 class="popup-title">Личный кабинет</h2>
+              <label class="visually-hidden" for="login-input">Логин</label>
+              <input class="input-field popup-login-input"  name="login" id="login-input" type="text" placeholder="email@example.com" required>
+              <label class="visually-hidden" for="password-input">Пароль</label>
+              <input class="input-field popup-password-input"  name="password" id="password-input" type="password" placeholder="......" required>
+              <div class="popup-login-button-wrapper">
+                <button class="button-red login-form-submit" type="submit">Войти</button>
+                <div class="popup-login-links-wrapper">
+                  <a class="popup-link popup-forgot-password" href="#">Забыли пароль?</a>
+                  <a class="popup-link popup-sing-in" href="#">Регистрация</a>
+                </div>
+               </div>
+            </form>
+          </div>
           <a class="navigation-link navigation-link-login" href="#">
             <span>Вход</span>
           </a>
@@ -44,6 +84,41 @@
             <span class="visually-hidden">Корзина</span>
             <span>2 товара</span>
           </a>
+          <div class="popup popup-cart-full visually-hidden">
+            <h2 class="popup-cart-full-title">Корзина</h2>
+            <ul class="popup-cart-full-list">
+              <li class="popup-cart-full-item">
+                <img class="product-card-picture-small" src="img/catalog-1-raspberry.jpg" width="46" height="48" alt="Фото товара"> 
+                <div class="product-description-cart-wrapper">
+                  <p class="product-title-cart">Малинка</p>
+                  <p class="product-text-cart">1 кг х 310 ₽</p>
+                </div>
+                <span class="product-price-cart">310 ₽</span>
+                <button class="button-cart-delete">
+                  <svg class="button-cart-delete-icon" width="10" height="10" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.803 1.138A.667.667 0 1 0 8.86.195L5 4.056 1.137.196a.667.667 0 1 0-.943.942L4.056 5 .196 8.86a.667.667 0 0 0 .942.943L5 5.942 8.86 9.803a.667.667 0 1 0 .943-.943L5.942 5l3.861-3.862Z"/>
+                  </svg>
+                </button>
+              </li>
+              <li class="popup-cart-full-item">
+                <img class="product-card-picture-small" src="img/catalog-4-bubblegum.jpg" width="46" height="48" alt="Фото товара"> 
+                <div class="product-description-cart-wrapper">
+                  <h3 class="product-title-cart">Бабл-гам</h3>
+                  <p class="product-text-cart">1,5 кг х 320 ₽</p>
+                </div>
+                <span class="product-price-cart">480 ₽</span>
+                <button class="button-cart-delete">
+                  <svg class="button-cart-delete-icon" width="10" height="10" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.803 1.138A.667.667 0 1 0 8.86.195L5 4.056 1.137.196a.667.667 0 1 0-.943.942L4.056 5 .196 8.86a.667.667 0 0 0 .942.943L5 5.942 8.86 9.803a.667.667 0 1 0 .943-.943L5.942 5l3.861-3.862Z"/>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+            <div class="popup-cart-result-wrapper">
+              <a class="button-red  button-popup-cart-order" href="#">Оформить заказ</a>
+              <span class="popup-cart-total-cost">Итого: 790 ₽</span>
+            </div>
+          </div>
         </li>
       </ul>
 
@@ -75,48 +150,49 @@
 
           <fieldset class="filter-fieldset">
             <legend class="filter-fieldset-title">Сортировка:</legend>
-            <div class="filter-fieldset-wrapper">
               <select class="select-control" name="sorting" id="sorting">
                 <option value="popular">по популярности</option>
                 <option value="cheap-to-expensive">по увеличению цены</option>
                 <option value="expensive-to-cheap">по уменьшению цены</option>
               </select>
-            </div>
           </fieldset>
 
-          <fieldset class="filter-fieldset">
-            <legend class="filter-fieldset-title">Цена:</legend>
-            <div class="price-range-wrapper">
-              <label for="filter-fieldset-label">
-                <input class="filter-fieldset-input" type="number" name="min-price"> ₽
+          <fieldset class="filter-fieldset filter-fieldset-price">
+            <legend class="filter-fieldset-title"><div class="range-wrapper-inputs">Цена: 
+              <label class="catalog-filter-label">
+                <input class="range-input" type="number" value="100" name="min-price"> ₽
+              </label> 
+              <span class="range-elem">&#8211;</span>
+              <label class="catalog-filter-label">
+                <input class="range-input" type="number" value="500" name="max-price"> ₽
               </label>
+            </div></legend>
 
-              <span class="price-range-element">-</span>
+            <div class="range-scale-wrapper">
 
-              <label for="filter-fieldset-label">
-                <input class="filter-fieldset-input" type="number" name="max-price"> ₽
-              </label>
+              <div class="range-scale">
+                <div class="range-bar" style="left: 40px; width: 90px">
+                  <button class="range-toggle toggle-min"  type="button">
+                    <span class="visually-hidden">Изменить минимальную цену.</span>
+                  </button>
+                  <button class="range-toggle toggle-max"  type="button">
+                    <span class="visually-hidden">Изменить максимальную цену.</span>
+                  </button>
+                </div>
+              </div>
             </div>
-            <div class="filter-fieldset-wrapper">
-              <button class="range-toggle toggle-min" type="button">
-                <span class="visually-hidden">Изменить минимальную цену</span>
-              </button>
 
-              <button class="range-toggle toggle-max" type="button">
-                <span class="visually-hidden">Изменить максимальную цену</span>
-              </button>
-            </div>       
           </fieldset>
 
           <fieldset class="filter-fieldset filter-fieldset-fat">
             <legend class="filter-fieldset-title">Жирность:</legend>
-            <div class="filter-fieldset-wrapper">
+            <div class="filter-fieldset-wrapper fat-filter-fieldset-wrapper">
               <ul class="filter-fieldset-list">
                 <li class="filter-fieldset-item">
                   <label class="control">
                     <input class="visually-hidden control-input" type="radio" name="fat-content" value="0%">
                     <span class="control-mark"></span>
-                    <span class="control-label">0%</span>
+                    <span class="control-label">0%</span> 
                   </label>
                 </li>
                 <li class="filter-fieldset-item">
@@ -151,35 +227,36 @@
                 <li class="filter-fieldset-item">
                   <label class="control">
                     <input class="visually-hidden control-input" type="checkbox" name="fillers" value="chocolate" checked>
-                    <span class="control-mark"></span>
+                    <span class="control-mark-fillers">
+                    </span>
                     <span class="control-label">шоколадные</span>
                   </label>
                 </li>
                 <li class="filter-fieldset-item">
                   <label class="control">
                     <input class="visually-hidden control-input" type="checkbox" name="fillers" value="sugar-powders" checked>
-                    <span class="control-mark"></span>
+                    <span class="control-mark-fillers"></span>
                     <span class="control-label">сахарные присыпки</span>
                   </label>
                 </li>
                 <li class="filter-fieldset-item">
                   <label class="control">
                     <input class="visually-hidden control-input" type="checkbox" name="fillers" value="fruits">
-                    <span class="control-mark"></span>
+                    <span class="control-mark-fillers"></span>
                     <span class="control-label">фрукты</span>
                   </label>
                 </li>
                 <li class="filter-fieldset-item">
                   <label class="control">
                     <input class="visually-hidden control-input" type="checkbox" name="fillers" value="syrups">
-                    <span class="control-mark"></span>
+                    <span class="control-mark-fillers"></span>
                     <span class="control-label">сиропы</span>
                   </label>
                 </li>
                 <li class="filter-fieldset-item">
                   <label class="control">
                     <input class="visually-hidden control-input" type="checkbox" name="fillers" value="jams">
-                    <span class="control-mark"></span>
+                    <span class="control-mark-fillers"></span>
                     <span class="control-label">джемы</span>
                   </label>
                 </li>
@@ -416,7 +493,7 @@
               </li>
               <li class="pagination-catalog-item pagination-catalog-item-next">
                 <a class="pagination-catalog-link" href="#">
-                  <svg class="icon-pagination-catalog" width="7" height="12" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="icon-pagination-catalog" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M1.14.86a.66.66 0 1 0-.95.95L4.4 6 .2 10.2a.67.67 0 0 0 .95.94L5.8 6.48a.66.66 0 0 0 0-.94L1.15.86Z"/>
                   </svg>
                   <span class="visually-hidden">Следующая страница</span>

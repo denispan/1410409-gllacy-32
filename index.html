@@ -33,8 +33,36 @@
           <a class="navigation-link navigation-link-search" href="#">
             <span class="visually-hidden">Поиск</span>
           </a>
+          <div class="popup popup-search visually-hidden">
+            <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
+              <label class="visually-hidden" for="search-input">Поиск по сайту</label>
+              <input class="input-field popup-search-input"  name="search" id="search-input" type="text" placeholder="Поиск по сайту" required>
+              <button class="button-clear-search">
+                <svg class="button-clear-search-icon" width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.803 1.138A.667.667 0 1 0 8.86.195L5 4.056 1.137.196a.667.667 0 1 0-.943.942L4.056 5 .196 8.86a.667.667 0 0 0 .942.943L5 5.942 8.86 9.803a.667.667 0 1 0 .943-.943L5.942 5l3.861-3.862Z"/>
+                </svg>
+              </button>
+              <button class="visually-hidden" type="submit">Отправить</button>
+            </form>
+          </div>
         </li>
         <li class="navigation-item">
+          <div class="popup popup-login visually-hidden">
+            <form class="login-form" action="https://echo.htmlacademy.ru/" method="get">
+              <h2 class="popup-title">Личный кабинет</h2>
+              <label class="visually-hidden" for="login-input">Логин</label>
+              <input class="input-field popup-login-input"  name="login" id="login-input" type="text" placeholder="email@example.com" required>
+              <label class="visually-hidden" for="password-input">Пароль</label>
+              <input class="input-field popup-password-input"  name="password" id="password-input" type="password" placeholder="......" required>
+              <div class="popup-login-button-wrapper">
+                <button class="button-red login-form-submit" type="submit">Войти</button>
+                <div class="popup-login-links-wrapper">
+                  <a class="popup-link popup-forgot-password" href="#">Забыли пароль?</a>
+                  <a class="popup-link popup-sing-in" href="#">Регистрация</a>
+                </div>
+               </div>
+            </form>
+          </div>
           <a class="navigation-link navigation-link-login" href="#">
             <span>Вход</span>
           </a>
@@ -44,6 +72,9 @@
             <span class="visually-hidden">Корзина</span>
             <span>Пусто</span>
           </a>
+          <div class="popup popup-cart-empty  visually-hidden">
+            <p class="popup-cart-text">Ваша корзина пока пуста</p>
+          </div>
         </li>
       </ul>
 
@@ -101,22 +132,35 @@
 
           <ol class="gallery-list">
             <li class="gallery-item gallery-item-current">
-              <a href="#"><img class="gallery-image-current" src="img/slider-1.png" width="312" height="507" alt="Нежный пломбир с клубничным джемом"></a>
+              <a href="#">
+                <img class="gallery-image" src="img/slider-1.png" width="312" height="507" alt="Нежный пломбир с клубничным джемом">
+              </a>
+              <div class="button-gallery-wrapper">
+                <button class="button-gallery button-gallery-prev" type="button">
+                  <svg class="arrow-gallery" width="6" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.8 1.8a.66.66 0 1 0-.94-.94L.2 5.53a.66.66 0 0 0 0 .94l4.67 4.67a.66.66 0 0 0 .94-.94L1.6 6l4.2-4.2Z"/>
+                  </svg>
+                  <span class="visually-hidden">Предыдущий товар</span>
+                </button>
+                <button class="button-gallery button-gallery-next" type="button">
+                  <svg class="arrow-gallery" width="6" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.8 1.8a.66.66 0 1 0-.94-.94L.2 5.53a.66.66 0 0 0 0 .94l4.67 4.67a.66.66 0 0 0 .94-.94L1.6 6l4.2-4.2Z"/>
+                  </svg>
+                  <span class="visually-hidden">Следующий товар</span>
+                </button>
+              </div>
             </li>
             <li class="gallery-item">
-              <a href="#"><img class="slider-image" src="img/slider-2.png" width="100" height="150" alt="Сливочное мороженое со вкусом банана"></a>
+              <a href="#"><img class="gallery-image" src="img/slider-2.png" width="100" height="150" alt="Сливочное мороженое со вкусом банана"></a>
             </li>
             <li class="gallery-item">
-              <a href="#"><img class="slider-image" src="img/slider-3.png" width="100" height="150" alt="Карамельный пломбир с маршмеллоу"></a>
+              <a href="#"><img class="gallery-image" src="img/slider-3.png" width="100" height="150" alt="Карамельный пломбир с маршмеллоу"></a>
             </li>
           </ol>
 
-          <button class="button gallery-prev" type="button">
-            <span class="visually-hidden">Предыдущий товар</span>
-          </button>
-          <button class="button gallery-next" type="button">
-            <span class="visually-hidden">Следующий товар</span>
-          </button>
+          
+
+          
 
           <ul class="social social-main">
             <li class="social-item">
@@ -271,7 +315,7 @@
             <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
               <p class="subscribe-email">
                 <label class="visually-hidden" for="subscribe-email">Email</label>
-                <input class="subscribe-email-field" placeholder="email@example.com" type="email" name="subscribe-email" id="subscribe-email" required>
+                <input class="input-field input-field-subscribe" placeholder="email@example.com" type="text" name="subscribe-email" id="subscribe-email" required>
               </p>
               <button class="button-red subscribe-email-submit" type="submit">Отправить</button>
             </form>
@@ -288,26 +332,26 @@
           <p class="description description-order">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
           <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="form-group delivery-date">
-              <label class="label-delivery" for="delivery-date">
+              <label class="label-delivery label-delivery-info" for="delivery-date">
                 Дата
-                <button class="info" type="button">
+                <button class="button-info" type="button">
                   <span class="visually-hidden">Посмотреть дополнительную информацию</span>
                 </button>
               </label>
-              <input class="text-input" type="text" id="delivery-date" name="delivery-date" placeholder="01.04.2020">
+              <input class="input-field" type="text" id="delivery-date" name="delivery-date" placeholder="01.04.2020">
             </p>
             <p class="form-group delivery-phone">
               <label class="label-delivery" for="delivery-phone">Телефон</label>
-              <input class="text-input" type="tel" id="delivery-phone" name="delivery-phone" placeholder="+7 800 999-00-00">
+              <input class="input-field" type="tel" id="delivery-phone" name="delivery-phone" placeholder="+7 800 999-00-00" required>
             </p>
             <p class="form-group delivery-address">
-              <label class="label-delivery" for="delivery-address">
+              <label class="label-delivery label-delivery-info" for="delivery-address">
                 Адрес
-                <button class="info" type="button">
+                <button class="button-info" type="button">
                   <span class="visually-hidden">Посмотреть дополнительную информацию</span>
                 </button>
               </label>
-              <input class="text-input" type="text" id="delivery-address" name="delivery-address" placeholder="ул. Большая Конюшенная, 19/8">
+              <input class="input-field" type="text" id="delivery-address" name="delivery-address" placeholder="ул. Большая Конюшенная, 19/8">
             </p>
             <button class="button-red delivery-form-submit" type="submit">Отправить</button>
           </form>
@@ -377,6 +421,31 @@
       </div>
     </div>
   </footer>
+
+  <div class="modal-container visually-hidden">
+    <div class="modal modal-feedback">
+      <button class="modal-close-button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <h2 class="modal-title visually-hidden">Форма обратной связи</h2>
+      <p class="modal-main-text">Мы обязательно ответим вам!</p>
+      <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
+        <p class="feedback-field-group">
+          <label class="visually-hidden" for="feedback-name">Имя и фамилия</label>
+          <input class="input-field feedback-form-field" type="text" id="feedback-name" name="feedback-name" placeholder="Имя и фамилия">
+        </p>
+        <p class="feedback-field-group">
+          <label class="visually-hidden" for="feedback-email">Почта</label>
+          <input class="input-field feedback-form-field" type="text" id="feedback-email" name="feedback-email" placeholder="email@example.com" required>
+        </p>
+        <p class="feedback-field-group">
+          <label class="visually-hidden" for="feedback-text">Текст заявления</label>
+          <textarea class="input-field feedback-form-field-textarea" name="feedback-text" id="feedback-text" rows="4" placeholder="В свободной форме" required></textarea>
+        </p>
+        <button class="button-red feedback-button-submit" type="submit">Отправить</button>
+      </form>
+    </div>
+  </div>
 
 </body>
 </html>
