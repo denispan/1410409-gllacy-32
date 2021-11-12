@@ -1658,12 +1658,6 @@ button-cart-delete-icon {
     background-color: #FCFCFC;
 }
 
-.control-input[type="radio"]:disabled + .control-mark {
-    opacity: 0.6;
-    pointer-events: none;
-    cursor: default; 
-    nav-index: -1;
-}
 
 .control-mark-fillers {
     background-image: url("../img/check-off.svg");
@@ -1675,8 +1669,24 @@ button-cart-delete-icon {
     transform: translateY(-50%);
 }
 
-.control-input[type="checkbox"]:checked .control-mark-fillers {
+.control-input[type="checkbox"]:checked + .control-mark-fillers {
     background-image: url("../img/check-on.svg");
+}
+
+.control-input[type="checkbox"]:not(:checked):hover + .control-mark-fillers {
+    background-image: url("../img/check-off-hover.svg");
+}
+
+.control-input[type="checkbox"]:not(:checked):disabled + .control-mark-fillers {
+    background-image: url("../img/check-off-disabled.svg");
+}
+
+.control-input[type="checkbox"]:checked:hover + .control-mark-fillers {
+    background-image: url("../img/check-on-hover.svg");
+}
+
+.control-input[type="checkbox"]:checked:disabled + .control-mark-fillers {
+    background-image: url("../img/check-on-disabled.svg");
 }
 
 .button-form-submit {   
