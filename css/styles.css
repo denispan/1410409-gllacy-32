@@ -352,11 +352,57 @@ body {
     margin: 0 0 32px 0;
 }
 
-.input-field.popup-login-input {
+.input-field {
+    padding: 14px 16px;
+    margin: 0;
+    font: inherit;
+    font-size: 16px;
+    line-height: 20px;
+    color: #2D3440;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    outline: 1px solid #B9B9B9;
+    border: none;
+    cursor: pointer;
+}
+
+.input-field::placeholder {
+    font: inherit;
+    font-size: 16px;
+    line-height: 20px;
+    color: #B9B9B9;
+}
+
+.input-field:hover {
+    outline-color: #2D3440;
+}
+
+.input-field:focus {
+    outline: 2px solid #2D3440;   
+}
+
+.input-field.input-error {
+    outline-color: #EA5454;
+}
+
+.input-field.input-error:hover {
+    outline: 2px solid #EA5454;
+}
+
+.input-field:disabled {
+    background-color: #E7E7E7;
+    outline-color: #B9B9B9;  
+}
+
+.input-field:disabled::placeholder {
+    opacity: 0.65;
+}
+
+.popup-login-input {
     margin-bottom: 16px;
 }
 
-.input-field.popup-password-input {
+.popup-password-input {
     margin-bottom: 32px;
 }
 
@@ -365,7 +411,7 @@ body {
     color: #2D3440;
 }
 
-.input-field.popup-password-input::placeholder {
+.popup-password-input::placeholder {
     font-size: 25px;
     line-height: 50px;
     font-weight: 900;
@@ -818,8 +864,6 @@ body {
     margin-bottom: 32px;
 }
 
-
-
 .popular {
     margin-bottom: 80px;
 }
@@ -865,7 +909,8 @@ body {
     box-shadow: 0 4px 12px 0 rgba(45, 52, 64, 0.1);
 }
 
-.product-card-title, .product-card-price {
+.product-card-title, 
+.product-card-price {
     margin: 0;
     font-size: 20px;
     line-height: 24px;
@@ -922,13 +967,13 @@ body {
     outline: none;
 }
 
-.product-card-button.disabled-link {
+.disabled-link {
     background-color: #B9B9B9;
     pointer-events: none;
     cursor: default;
 }
 
-.product-card-button.disabled-link .cart-icon {
+.disabled-link .cart-icon {
     fill: #000000;
 }
 
@@ -1211,51 +1256,7 @@ body {
     display: block;
 }
 
-.input-field {
-    padding: 14px 16px;
-    margin: 0;
-    font: inherit;
-    font-size: 16px;
-    line-height: 20px;
-    color: #2D3440;
-    background-color: #FFFFFF;
-    border-radius: 4px;
-    outline: 1px solid #B9B9B9;
-    border: none;
-    cursor: pointer;
-}
 
-.input-field::placeholder {
-    font: inherit;
-    font-size: 16px;
-    line-height: 20px;
-    color: #B9B9B9;
-}
-
-.input-field:hover {
-    outline-color: #2D3440;
-}
-
-.input-field:focus {
-    outline: 2px solid #2D3440;   
-}
-
-.input-field.input-error {
-    outline-color: #EA5454;
-}
-
-.input-field.input-error:hover {
-    outline: 2px solid #EA5454;
-}
-
-.input-field:disabled {
-    background-color: #E7E7E7;
-    outline-color: #B9B9B9;  
-}
-
-.input-field:disabled::placeholder {
-    opacity: 0.65;
-}
 
 .contacts {
     background-color: #FCFCFC;
@@ -1299,7 +1300,7 @@ body {
     margin: 0 0 24px 0;
 }
 
-.phone-number  {
+.phone-number {
     margin: 0;
     padding: 0;
 }
@@ -1399,7 +1400,8 @@ body {
     margin-left: auto;
 }
 
-.maker-link, .maker-text {
+.maker-link, 
+.maker-text {
     font-size: 12px;
     line-height: 16px;
 }
@@ -1780,13 +1782,13 @@ body {
     transform: translateY(-50%);
 }
 
-.control-mark-radio {
+.mark-radio {
     border-radius: 50%;
     box-sizing: border-box;
     border: 1px solid #000000;
 }
 
-.control-input-radio:checked + .control-mark-radio::before {
+.radio:checked + .mark-radio::before {
     content: "";
     position: absolute;
     width: 6px;
@@ -1798,35 +1800,35 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.control:hover .control-mark-radio {
+.control:hover .mark-radio {
     border-color: #FCFCFC;
 }
 
-.control-input-radio:checked:hover + .control-mark-radio::before {
+.radio:checked:hover + .mark-radio::before {
     background-color: #FCFCFC;
 }
 
-.control-mark-checkbox {
+.mark-checkbox {
     background-image: url("../img/check-off.svg");
 }
 
-.control-input-checkbox:checked + .control-mark-checkbox {
+.checkbox:checked + .mark-checkbox {
     background-image: url("../img/check-on.svg");
 }
 
-.control-input-checkbox:not(:checked):hover + .control-mark-checkbox {
+.checkbox:not(:checked):hover + .mark-checkbox {
     background-image: url("../img/check-off-hover.svg");
 }
 
-.control-input-checkbox:not(:checked):disabled + .control-mark-checkbox {
+.checkbox:not(:checked):disabled + .mark-checkbox {
     background-image: url("../img/check-off-disabled.svg");
 }
 
-.control-input-checkbox:checked:hover + .control-mark-checkbox {
+.checkbox:checked:hover + .mark-checkbox {
     background-image: url("../img/check-on-hover.svg");
 }
 
-.control-input-checkbox:checked:disabled + .control-mark-checkbox {
+.checkbox:checked:disabled + .mark-checkbox {
     background-image: url("../img/check-on-disabled.svg");
 }
 
