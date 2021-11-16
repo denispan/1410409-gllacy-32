@@ -1603,7 +1603,7 @@ body {
 }
 
 .select-control {
-  width: 100%;
+  max-width: 196px;
   padding: 8px 28px 8px 16px;
   font: inherit;
   color: #2d3440;
