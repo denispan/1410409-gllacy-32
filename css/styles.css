@@ -101,11 +101,11 @@ body {
   width: 1170px;
   align-items: center;
   margin: 0 auto;
-  padding: 24px 0;
+  padding: 21px 0 24px 0;
 }
 
 .main-logo {
-  margin: 0 16px 0 0;
+  margin: 2px 16px 0 0;
 }
 
 .navigation-list {
@@ -350,11 +350,11 @@ body {
 .login-form {
   display: flex;
   flex-direction: column;
-  padding: 48px 48px 52px 48px;
+  padding: 52px 48px;
 }
 
 .popup-title {
-  margin: 0 0 32px 0;
+  margin: 0 0 37px 0;
 }
 
 .input-field {
@@ -426,12 +426,23 @@ body {
 }
 
 .popup-link {
+  display: inline-block;
+  position: relative;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
   color: #2d3440;
   text-decoration: none;
-  border-bottom: 1px solid #2d3440;
+}
+
+.popup-link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #2d3440;
+  left: 0;
+  bottom: 0;
 }
 
 .popup-cart-empty {
@@ -463,7 +474,7 @@ body {
 .popup-cart-full {
   right: 0;
   width: 441px;
-  padding: 48px 48px 60px 48px;
+  padding: 52px 48px 48px 48px;
   top: 40px;
   display: none;
 }
@@ -491,7 +502,7 @@ body {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  grid-template-columns: 46px 158px 77px 16px;
+  grid-template-columns: 46px 147px 87px;
   column-gap: 16px;
   align-items: center;
 }
@@ -511,6 +522,10 @@ body {
 }
 
 .product-price-cart {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #2d3440;
   grid-column: 3 / 4;
 }
 
@@ -528,13 +543,14 @@ body {
   font-size: 18px;
   line-height: 22px;
   font-weight: 700;
-  margin: 0;
+  margin: 0 0px 5px 0;
 }
 
 .product-text-cart {
   font-size: 14px;
   line-height: 20px;
   margin: 0;
+  margin-top: -2px;
   color: #b9b9b9;
 }
 
@@ -597,7 +613,7 @@ body {
   font-size: 36px;
   line-height: 46px;
   font-weight: 900;
-  margin: 110px 0 24px 0;
+  margin: 111px 0 26px 0;
 }
 
 .main-goods-description {
@@ -843,7 +859,7 @@ body {
 
 .promo-item-title {
   margin-top: 0;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
@@ -901,6 +917,7 @@ body {
 .product-card-title,
 .product-card-price {
   margin: 0;
+  word-spacing: 2px;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -914,14 +931,13 @@ body {
 }
 
 .product-card-title {
-  margin-bottom: 8px;
+  margin-bottom: 9px;
 }
 
 .product-card-text {
-  margin: 0;
+  margin: 0 0 15px 0;
   color: #565c66;
   text-align: center;
-  margin-bottom: 16px;
 }
 
 .product-card-wrapper {
@@ -985,19 +1001,19 @@ body {
   height: 100%;
   background-color: #fcfcfc;
   border-radius: 16px;
-  padding: 56px 40px;
+  padding: 58px 40px 55px 40px;
 }
 
 .about-shop-key-text {
   width: 995px;
-  margin: 0 auto 60px auto;
+  margin: 0 auto 57px auto;
 }
 
 .about-shop-list {
   width: 100%;
   display: grid;
   grid-template-columns: 506px 506px;
-  gap: 40px 31px;
+  gap: 42px 30px;
   padding: 0;
   margin: 0 auto;
 }
@@ -1029,7 +1045,7 @@ body {
   background-repeat: no-repeat;
   border-radius: 16px;
   width: 570px;
-  padding: 32px;
+  padding: 34px 32px 32px 32px;
   background-size: cover;
 }
 
@@ -1064,7 +1080,7 @@ body {
   height: 100%;
   background-color: #fcfcfc;
   border-radius: 16px;
-  padding: 26px 24px 26px 26px;
+  padding: 28px 24px 26px 26px;
 }
 
 .subscribe-description {
@@ -1126,18 +1142,18 @@ body {
   background-color: #fcfcfc;
   background-image: url("../img/delivery-background.jpg");
   border-radius: 16px;
-  padding: 64px 64px 64px 100px;
+  padding: 63px 64px 64px 100px;
   margin-bottom: 80px;
   background-size: cover;
 }
 
 .delivery-description {
   width: 371px;
-  margin: 105px 135px 0 0;
+  margin: 102px 135px 0 0;
 }
 
 .delivery-title {
-  margin: 0 0 25px 0;
+  margin: 2px 0 25px 0;
   padding: 0;
   text-align: left;
 }
@@ -1148,7 +1164,7 @@ body {
 
 .description-order {
   width: 380px;
-  margin: 0 0 32px 0;
+  margin: 0 0 34px 0;
   padding: 0;
 }
 
@@ -1156,7 +1172,7 @@ body {
   width: 500px;
   background-color: #fcfcfc;
   border-radius: 8px;
-  padding: 43px 40px 42px 40px;
+  padding: 41px 40px 42px 40px;
 }
 
 .delivery-form {
@@ -1192,7 +1208,7 @@ body {
 
 .label-delivery,
 .label-delivery-info-wrapper {
-  margin-bottom: 8px;
+  margin-bottom: 7px;
   padding: 0;
   line-height: 20px;
 }
@@ -1258,11 +1274,11 @@ body {
   width: 343px;
   background-color: #fcfcfc;
   border-radius: 8px;
-  padding: 40px;
+  padding: 42px 40px 40px 40px;
 }
 
 .contacts-title {
-  width: 190px;
+  width: 205px;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
@@ -1307,7 +1323,7 @@ body {
   display: flex;
   width: 1170px;
   margin: 0 auto;
-  padding: 48px 14px 48px 4px;
+  padding: 45px 14px 48px 4px;
   justify-content: space-between;
 }
 
@@ -1379,12 +1395,14 @@ body {
 
 .maker {
   margin-left: auto;
+  margin-top: 3px;
 }
 
 .maker-link,
 .maker-text {
   font-size: 12px;
   line-height: 16px;
+  margin: 10px 0 0 0;
 }
 
 .maker-link {
@@ -1422,8 +1440,8 @@ body {
 .modal-close-button {
   position: absolute;
   padding: 0;
-  top: 0;
-  right: 0;
+  top: 15px;
+  right: 18px;
   width: 50px;
   height: 50px;
   background-color: #fcfcfc;
@@ -1451,7 +1469,7 @@ body {
 }
 
 .feedback-field-group {
-  margin-bottom: 16px;
+  margin-bottom: 15px;
 }
 
 .feedback-form .input-field {
@@ -1482,7 +1500,7 @@ body {
 
 .page-inner {
   margin-top: 26px;
-  margin-bottom: 75px;
+  margin-bottom: 80px;
 }
 
 .inner-header {
@@ -1566,6 +1584,7 @@ body {
 }
 
 .filter-fieldset-title {
+  width: 150px;
   margin: 0 0 8px 16px;
 }
 
@@ -1581,11 +1600,11 @@ body {
 
 .range-elem {
   margin-left: 5px;
-  margin-right: 5px;
+  margin-right: 2px;
 }
 
 .range-input {
-  width: 30px;
+  width: 33px;
   padding: 0 2px;
   font: inherit;
   color: #2d3440;
@@ -1735,7 +1754,7 @@ body {
 .filter-fieldset-wrapper {
   background-color: rgba(252, 252, 252, 0.3);
   border-radius: 20px;
-  padding: 8px 16px;
+  padding: 8px 16px 8px 18px;
 }
 
 .fat-filter-fieldset-wrapper {
@@ -1845,7 +1864,7 @@ body {
 .footer-container-inner::before {
     content: "";
     position: absolute;
-    top: 4px;
+    top: 0px;
     left: 0;
     width: 100%;
     height: 1px;
@@ -1910,6 +1929,7 @@ body {
 
 .pagination-catalog-link {
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: center;
   min-width: 26px;
@@ -1938,7 +1958,10 @@ body {
 }
 
 .icon-pagination-catalog-next {
-    margin-left: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -6px;
 }
 
 .icon-pagination-catalog {
